@@ -1,3 +1,3 @@
-### discover theme switcher
+### Discover > Desafios > theme switcher
 
-desafio de alteração de tema claro/escuro
+Desafio de alteração de tema de uma página entre claro/escuro
