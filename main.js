@@ -1,7 +1,9 @@
-const moon = document.querySelector(".first")
-const sun = document.querySelector(".second")
+const main = document.querySelector("main")
 const ball = document.querySelector(".ball")
+const container = document.querySelector(".container")
 
-first.onclick = () => {
-  ball.classList.remove("dark-ball")
+ball.onclick = () => {
+  ball.classList.toggle("dark-ball")
+  main.classList.toggle("dark-mode")
+  container.classList.toggle("dark-sand")
 }

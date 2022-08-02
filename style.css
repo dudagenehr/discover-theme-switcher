@@ -1,23 +1,24 @@
 :root{
   --sand-color: #F5FF90;
+  --night-sand: rgb(102, 87, 75);
   --light-blue: #77ABFD;
   --dark-blue: #160E58;
 }
+/* base */
 *{
   margin: 0;
   padding: 0;
 }
-main {
-  background-color: #77ABFD;
-  width: 100vw;
-  height: 100vh;
-}
-
 .wrapper{
   height: 50vw;
   display: flex;
   justify-content: center;
   align-items: center;  
+}
+main {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--light-blue);
 }
 .container {
   position: relative;
@@ -57,7 +58,16 @@ main {
   position: absolute;
   z-index: 0;
   background-color: rgb(255, 255, 255);
+  transition: position .10s ease-in;
+}
+
+/*dark mode */
+.dark-mode {
+  background-color: var(--dark-blue);
 }
 .dark-ball {
   left: 200px;
+}
+.dark-sand {
+  background-color: var(--night-sand);
 }
