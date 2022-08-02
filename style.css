@@ -19,22 +19,24 @@ main {
   width: 100vw;
   height: 100vh;
   background-color: var(--light-blue);
+  transition: background-color .2s linear;
 }
 .container {
   position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 400px;
-  height: 200px;
+  width: 160px;
+  height: 80px;
   background-color: var(--sand-color);
   border: 0 solid blue;
   border-radius: 100px;
+  transition: background-color .2s linear;
 }
 .circle{
   margin: 10px;
-  height: 180px;
-  width: 180px;
+  height: 58px;
+  width: 58px;
   border: 0 solid blue;
   border-radius: 100px;
 }
@@ -53,12 +55,11 @@ main {
   background-size: 70%;
 }
 .ball {
-  height: 181px;
-  width: 181px;
+  padding: 3px;
   position: absolute;
-  z-index: 0;
+  left: -1px;
   background-color: rgb(255, 255, 255);
-  transition: position .10s ease-in;
+  transition: position 1s ease-in-out;
 }
 
 /*dark mode */
@@ -66,7 +67,7 @@ main {
   background-color: var(--dark-blue);
 }
 .dark-ball {
-  left: 200px;
+left: 80px;
 }
 .dark-sand {
   background-color: var(--night-sand);
