@@ -1,0 +1,63 @@
+:root{
+  --sand-color: #F5FF90;
+  --light-blue: #77ABFD;
+  --dark-blue: #160E58;
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+main {
+  background-color: #77ABFD;
+  width: 100vw;
+  height: 100vh;
+}
+
+.wrapper{
+  height: 50vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+}
+.container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 400px;
+  height: 200px;
+  background-color: var(--sand-color);
+  border: 0 solid blue;
+  border-radius: 100px;
+}
+.circle{
+  margin: 10px;
+  height: 180px;
+  width: 180px;
+  border: 0 solid blue;
+  border-radius: 100px;
+}
+.first {
+  background: url(./assets/moon.svg);
+  background-color: var(--dark-blue);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 70%;
+}
+.second {
+  background: url(./assets/sun.svg);
+  background-color: var(--light-blue);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 70%;
+}
+.ball {
+  height: 181px;
+  width: 181px;
+  position: absolute;
+  z-index: 0;
+  background-color: rgb(255, 255, 255);
+}
+.dark-ball {
+  left: 200px;
+}
